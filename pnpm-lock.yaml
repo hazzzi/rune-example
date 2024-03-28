@@ -5,12 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fxts/core':
+    specifier: ^0.28.0
+    version: 0.28.0
   '@rune-ts/server':
-    specifier: ^0.1.12
-    version: 0.1.12
+    specifier: ^0.0.20
+    version: 0.0.20
   rune-ts:
-    specifier: ^0.1.0
-    version: 0.1.0
+    specifier: ^0.1.1
+    version: link:node_modules/rune-ts
 
 devDependencies:
   '@types/express':
@@ -58,6 +61,12 @@ packages:
 
   /@fxts/core@0.24.0:
     resolution: {integrity: sha512-2zZx7stySm5blbvIxSteIMtouHB/DcqCWVyOEWEcRLcbyWtOxwco5FD299J4Uqt1Gvq5wHdSbdOMd0s8qi1xyA==}
+    dependencies:
+      tslib: 2.6.2
+    dev: false
+
+  /@fxts/core@0.28.0:
+    resolution: {integrity: sha512-V7YHWzbOMTzkPRdex3hYu+LSNAwxIMvLXIk/e4tqp1ES0R30tvFu8ikSBpXq9H/AY0DtKVUwED3+ou+Q+9jsFQ==}
     dependencies:
       tslib: 2.6.2
     dev: false
@@ -140,8 +149,8 @@ packages:
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
     dev: false
 
-  /@rune-ts/server@0.1.12:
-    resolution: {integrity: sha512-mX5AxF1ayzfs4JpM6yWzXWCcqFSK1FKrqnvY67iRitgJsOCVhnnsgF6u1rx1Ad0wSJijPkSxiSi36nJHJx8rEw==}
+  /@rune-ts/server@0.0.20:
+    resolution: {integrity: sha512-863WxvFH1+VbL3Hurt9RFZXVSCZAZbmG9/Sxod3Yumc6VgoyUYPmZoMWcAJJNApyOUuHiEUreoHL0AtDhgoSyQ==}
     hasBin: true
     dependencies:
       '@swc/core': 1.4.11
@@ -1354,7 +1363,7 @@ packages:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.8
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: false
@@ -2354,13 +2363,6 @@ packages:
 
   /rune-ts@0.0.8:
     resolution: {integrity: sha512-CvzCLzIS/zeYB2qUTlsGveC3h9brgdQHmyOKgOAlTfzsXqIhS7Szs/S1rrG5yFxmo/ljonVhlDcnHmfKwSD5Ng==}
-    engines: {node: '>=14.0.0'}
-    dependencies:
-      '@fxts/core': 0.24.0
-    dev: false
-
-  /rune-ts@0.1.0:
-    resolution: {integrity: sha512-eRId/1MS4TugamDqy3H/gbL7Ni2fstQOfrcNc0UxNIs0TSpjces2EtbEg8yAXMT82BINAq6cD1fxv6geQ2l3oA==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@fxts/core': 0.24.0

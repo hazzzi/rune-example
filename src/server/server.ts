@@ -15,9 +15,9 @@ server.use((req, res, next) => {
   next();
 })
 
-server.get(ClientRouter['/example'].toString(), function (req, res) {
+server.get(ClientRouter['/hello-world'].toString(), function (req, res) {
   res.locals.layoutData.title = 'Home';
-  // res.send(ClientRouter['/example']().toHtml());
+  res.send(ClientRouter['/hello-world']({}, res.locals.layoutData).toHtml());
 })
 
 server.get('/', (req, res) => {
