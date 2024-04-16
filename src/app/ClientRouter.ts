@@ -1,8 +1,8 @@
-import { LayoutHelper } from 'rune-ts';
+import { createRouter } from '@rune-ts/server';
 import { HelloWorldRouter } from './ui/HelloWorld';
 
-export type ClientRouter = HelloWorldRouter;
+export type ClientRouter = typeof HelloWorldRouter;
 
-export const ClientRouter: HelloWorldRouter = LayoutHelper.createRouter<ClientRouter>({
+export const ClientRouter = createRouter<ClientRouter>({
   ...HelloWorldRouter,
 });
